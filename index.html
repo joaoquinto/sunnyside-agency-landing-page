@@ -1,68 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="An landing for marketing">
+  <meta name="keywords" content="">
+  <meta name="author" content="João Victor Oliveira Pereira, github: @joaoquinto">
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <!-- Meta tags de compartilhamento -->
+  <!-- Metatag Facebook, Whatsapp e instagram -->
+  <meta property="og:url" content="https://joaoquinto.github.io/sunnyside-agency-landing-page/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Frontend Mentor | Sunnyside agency landing page" />
+  <meta property="og:description" content="An landing for marketing" />
+  <meta property="og:image" content="" />
+
+  <!-- Metatag Twitter -->
+  <meta name="twitter:title" content="Frontend Mentor | Sunnyside agency landing page">
+  <meta name="twitter:description" content="An landing for marketing">
+  <meta name="twitter:image" content="">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./assets/css/style.css">
+
   <title>Frontend Mentor | Sunnyside agency landing page</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
   </style>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-38JYG569C6"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-38JYG569C6');
+  </script>
 </head>
+
 <body>
-  About
-  Services
-  Projects
-  Contact
-
-  We are creatives
-
-  Transform your brand
-
-  We are a full-service creative agency specializing in helping brands grow fast. 
-  Engage your clients through compelling visuals that do most of the marketing for you.
-
-  Learn more
-
-  Stand out to the right audience
-
-  Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places. 
-
-  Learn more
-
-  Graphic design
-  Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.
-
-  Photography
-  Increase your credibility by getting the most stunning, high-quality photos that improve your business image.
-
-  Client testimonials
-
-  We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.
-  Emily R.
-  Marketing Director
-
-  Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.
-  Thomas S.
-  Chief Operating Officer
-
-  Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!
-  Jennie F.
-  Business Owner
-
-  About
-  Services
-  Projects
-  Contact
-
+  <header>
+    <nav id="container-menu">
+      <a class="logo-sunnyside" href="index.html">
+        <img src="./assets/images/logo.svg" alt="Logo Sunnyside">
+      </a>
+      <button id="hamburguer">
+        <img src="./assets/images/icon-hamburger.svg" alt="">
+      </button>
+      <ul id="container-links" class="">
+        <li><a class=" item-links" href="#">About</a></li>
+        <li><a class="item-links" href="#">Services</a></li>
+        <li><a class="item-links" href="#">Projects</a></li>
+        <li><a id="call-to-action" href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section id="we-are">
+    <h1 class="title-we-are">
+      We are creatives
+    </h1>
+  </section>
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noopener noreferrer">Frontend Mentor</a>.
+    Coded by <a href="https://github.com/joaoquinto" target="_blank" rel="noopener noreferrer">João Victor Oliveira Pereira</a>
   </div>
+  <script type="module" src="./js/script.js"></script>
 </body>
+
 </html>
