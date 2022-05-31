@@ -4,17 +4,6 @@
 
 - [@joaoquinto](https://github.com/joaoquinto)
 
-## Aprendizados
-
-### O que você aprendeu construindo esse projeto?
-
--
-
-### Quais desafios você enfrentou?
-
--
-
-### Como você superou-os?
 
 ## Screenshots
 
