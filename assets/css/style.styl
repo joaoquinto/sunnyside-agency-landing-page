@@ -122,6 +122,66 @@ header
 
 
 
+
+
+@keyframes hamburguerVisible
+  from
+    opacity 0
+    transform: translateY(-100px)
+  to
+    opacity 1
+    transform: translateY(0)
+
+@keyframes arrow-up-down 
+  from
+    transform: translateY(-50px)
+  to
+    transform: translateY(0)
+
+#transform
+  display flex
+  flex-direction column
+  align-items center
+  text-align center
+  & .yellow-egg
+      background-image url("../images/mobile/image-transform.jpg")
+      background-position 50%
+      background-size cover
+      background-repeat no-repeat
+      width 100%
+      height 400px
+  & .title-transform
+      font-family $fraunces
+      font-size 1.875rem
+      color $Very-dark-desaturated-blue
+  & .transform-content
+      width 80%
+      background-color hsl(26, 100%, 99%)
+      padding 100px 0
+  & .paragraph-content
+      margin 30px 0
+      font-size $fontS
+      font-family $barlow
+      color:$Dark-grayish-blue
+      line-height 1.7
+.learn-more
+  font-family $fraunces
+  font-weight $fw700
+  text-transform uppercase
+  color:$Very-dark-desaturated-blue
+  z-index -1000
+.learn-more:after
+  content ''
+  display table
+  margin 0 auto
+  background-color $Yellow
+  width 125px
+  height 10px
+  border-radius: 50px
+  position relative
+  bottom 6px
+  opacity 0.5
+
 @media (min-width: 800px)
   header
     & #container-menu
@@ -159,7 +219,6 @@ header
             &:hover
               background-color: transparent
               color: $White
-
           & .logo-sunnyside
             align-self: initial
             flex: 2
@@ -170,22 +229,27 @@ header
     background-image: url("../images/desktop/image-header.jpg")
     & .title-we-are
         letter-spacing: 10px
-
-@keyframes hamburguerVisible
-  from
-    opacity 0
-    transform: translateY(-100px)
-  to
-    opacity 1
-    transform: translateY(0)
-
-@keyframes arrow-up-down 
-  from
-    transform: translateY(-50px)
-  to
-    transform: translateY(0)
-
-
-
-
-  
+  #transform
+    flex-direction row
+    & .transform-content
+        order 0
+        align-self center
+        padding 0
+        flex 50%
+        width 50%
+        padding 50px 0
+        text-align left
+        & .container-content
+            width 70%
+            margin 0 auto
+        & .learn-more:after
+            margin 0
+        & .paragraph-content
+            width 100%
+      & .yellow-egg
+        padding 50px 0
+        order 1
+        flex 50%
+        background-image url("../images/desktop/image-transform.jpg")
+        background-position 40%
+      
