@@ -52,6 +52,19 @@ header #container-menu #container-links {
   z-index: 1000;
   transition: 0.25s;
 }
+header #container-menu #container-links:before {
+  content: '';
+  width: 0;
+  height: 0;
+  position: absolute;
+  bottom: 98%;
+  right: 0vw;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 0 30px 30px;
+  border-color: transparent transparent #fff transparent;
+}
 header #container-menu #container-links.visible {
   display: flex;
   visibility: visible;
@@ -93,6 +106,10 @@ header #container-menu #call-to-action {
   text-align: center;
   text-transform: uppercase;
   padding: 0 0 80px 0;
+}
+.title-we-are.invisible {
+  display: none;
+  visibility: hidden;
 }
 .title-we-are::after {
   display: block;
@@ -151,8 +168,51 @@ header #container-menu #call-to-action {
   height: 10px;
   border-radius: 50px;
   position: relative;
-  bottom: 6px;
+  bottom: 4px;
   opacity: 0.5;
+  transition: 0.1s;
+}
+.learn-more:hover:after {
+  opacity: 1;
+}
+#stand-out {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+#stand-out .pink-cup {
+  background-image: url("../images/mobile/image-stand-out.jpg");
+  background-position: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 400px;
+}
+#stand-out .title-content {
+  font-family: 'Fraunces', serif;
+  font-size: 1.875rem;
+  color: #23303e;
+}
+#stand-out .transform-content {
+  width: 80%;
+  background-color: #fffcfa;
+  padding: 100px 0;
+}
+#stand-out .paragraph-stand-out {
+  margin: 30px 0;
+  font-size: 1.125rem;
+  font-family: 'Barlow', sans-serif;
+  color: #818498;
+  line-height: 1.7;
+}
+#stand-out .content {
+  width: 80%;
+  background-color: #fffcfa;
+  padding: 100px 0;
+}
+#stand-out .learn-more:after {
+  background-color: #fe7867;
 }
 @media (min-width: 800px) {
   header #container-menu {
@@ -172,6 +232,10 @@ header #container-menu #call-to-action {
     height: 0;
     z-index: 1000;
     flex: 1;
+  }
+  header #container-menu #container-links:before {
+    visibility: hidden;
+    display: none;
   }
   header #container-menu #container-links li + li {
     margin-top: 0;
@@ -230,6 +294,7 @@ header #container-menu #call-to-action {
   }
   #transform .transform-content .learn-more:after {
     margin: 0;
+    right: 5px;
   }
   #transform .transform-content .paragraph-content {
     width: 100%;
@@ -240,6 +305,31 @@ header #container-menu #call-to-action {
     flex: 50%;
     background-image: url("../images/desktop/image-transform.jpg");
     background-position: 40%;
+  }
+  #stand-out {
+    flex-direction: row;
+  }
+  #stand-out .pink-cup {
+    padding: 50px 0;
+    flex: 50%;
+    background-image: url("../images/desktop/image-stand-out.jpg");
+    background-position: 40%;
+  }
+  #stand-out .content {
+    align-self: center;
+    padding: 0;
+    flex: 50%;
+    width: 50%;
+    padding: 50px 0;
+    text-align: left;
+  }
+  #stand-out .content .container-content {
+    width: 70%;
+    margin: 0 auto;
+  }
+  #stand-out .content .learn-more:after {
+    margin: 0;
+    right: 5px;
   }
 }
 @-moz-keyframes hamburguerVisible {

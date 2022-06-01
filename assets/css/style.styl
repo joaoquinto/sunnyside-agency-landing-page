@@ -17,6 +17,7 @@ $Very-dark-grayish-blue = hsl(213, 9%, 39%)
 $Dark-grayish-blue = hsl(232, 10%, 55%)
 $Grayish-blue = hsl(210, 4%, 67%)
 $White = hsl(0, 0%, 100%)
+$White-ice = hsl(26, 100%, 99%)
 
 *
   margin: 0
@@ -73,6 +74,18 @@ header
           height: 300px
           z-index 1000
           transition: 0.25s
+          &:before
+            content ''
+            width: 0;
+            height: 0;
+            position absolute
+            bottom: 98%;
+            right: 0vw;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 0 0 30px 30px;
+            border-color: transparent transparent $White transparent;
           &.visible
             display: flex
             visibility visible
@@ -109,6 +122,9 @@ header
   text-align: center
   text-transform uppercase
   padding: 0 0 80px 0
+  &.invisible
+    display none
+    visibility hidden
   &::after
       display: block
       content: ''
@@ -156,7 +172,7 @@ header
       color $Very-dark-desaturated-blue
   & .transform-content
       width 80%
-      background-color hsl(26, 100%, 99%)
+      background-color $White-ice
       padding 100px 0
   & .paragraph-content
       margin 30px 0
@@ -179,8 +195,49 @@ header
   height 10px
   border-radius: 50px
   position relative
-  bottom 6px
+  bottom 4px
   opacity 0.5
+  transition: .1s
+.learn-more:hover:after
+  opacity 1
+
+#stand-out
+  display flex
+  flex-direction column
+  align-items center
+  text-align center
+  & .pink-cup
+      background-image url("../images/mobile/image-stand-out.jpg")
+      background-position 50%
+      background-size cover
+      background-repeat no-repeat
+      width 100%
+      height 400px
+    & .title-content
+      font-family $fraunces
+      font-size 1.875rem
+      color $Very-dark-desaturated-blue
+    & .transform-content
+      width 80%
+      background-color $White-ice
+      padding 100px 0
+    & .paragraph-stand-out
+      margin 30px 0
+      font-size $fontS
+      font-family $barlow
+      color:$Dark-grayish-blue
+      line-height 1.7
+    & .content
+        width 80%
+        background-color $White-ice
+        padding 100px 0
+    & .learn-more:after
+        background-color $Soft-red 
+
+
+
+
+
 
 @media (min-width: 800px)
   header
@@ -200,6 +257,9 @@ header
           height: 0
           z-index 1000
           flex: 1
+          &:before
+            visibility hidden
+            display none
           & li + li 
               margin-top: 0
               margin-left: 40px
@@ -244,6 +304,7 @@ header
             margin 0 auto
         & .learn-more:after
             margin 0
+            right 5px
         & .paragraph-content
             width 100%
       & .yellow-egg
@@ -252,4 +313,25 @@ header
         flex 50%
         background-image url("../images/desktop/image-transform.jpg")
         background-position 40%
+  #stand-out
+    flex-direction row
+    & .pink-cup
+        padding 50px 0
+        flex 50%
+        background-image url("../images/desktop/image-stand-out.jpg")
+        background-position 40%
+    & .content
+        align-self center
+        padding 0
+        flex 50%
+        width 50%
+        padding 50px 0
+        text-align left
+        & .container-content
+            width 70%
+            margin 0 auto
+          & .learn-more:after
+              margin 0
+              right 5px
+
       
