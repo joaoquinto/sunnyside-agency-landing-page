@@ -1,12 +1,15 @@
 const containerLinks = document.querySelector("#container-links");
 const hamburguer = document.querySelector("#hamburguer");
+const titleWeAre = document.querySelector('.title-we-are')
 
 export default function handleHamburguer() {
   containerLinks.classList.toggle("visible");
   if (containerLinks.classList.contains("visible")) {
     containerLinks.ariaExpanded = "true";
+    titleWeAre.classList.add('invisible')
   } else {
     containerLinks.ariaExpanded = "false";
+    titleWeAre.classList.remove('invisible')
   }
 }
 
@@ -18,6 +21,7 @@ export function acessibilidade() {
   } else {
     containerLinks.ariaOrientation = "horizontal";
     hamburguer.ariaHidden = "true";
+    titleWeAre.classList.remove('invisible')
   }
 }
 
