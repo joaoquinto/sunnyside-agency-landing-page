@@ -126,6 +126,7 @@ header #container-menu #call-to-action {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  background-color: #fffcfa;
 }
 #transform .yellow-egg {
   background-image: url("../images/mobile/image-transform.jpg");
@@ -142,7 +143,6 @@ header #container-menu #call-to-action {
 }
 #transform .transform-content {
   width: 80%;
-  background-color: #fffcfa;
   padding: 100px 0;
 }
 #transform .paragraph-content {
@@ -180,6 +180,7 @@ header #container-menu #call-to-action {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  background-color: #fffcfa;
 }
 #stand-out .pink-cup {
   background-image: url("../images/mobile/image-stand-out.jpg");
@@ -196,7 +197,6 @@ header #container-menu #call-to-action {
 }
 #stand-out .transform-content {
   width: 80%;
-  background-color: #fffcfa;
   padding: 100px 0;
 }
 #stand-out .paragraph-stand-out {
