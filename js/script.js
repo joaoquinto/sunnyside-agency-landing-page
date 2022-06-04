@@ -1,4 +1,5 @@
-import handleHamburguer, { acessibilidade } from "./modules/hamburguer.js";
+import handleHamburguer, { acessibilidade} from "./modules/hamburguer.js";
+
 
 handleHamburguer
 acessibilidade

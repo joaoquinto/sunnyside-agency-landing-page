@@ -92,7 +92,7 @@ header #container-menu #call-to-action {
 }
 #we-are {
   padding: 100px 0;
-  background-image: url("../images/mobile/image-header.jpg");
+  background-image: url("../images/mobile/image-header.svg");
   background-size: cover;
   background-position: center bottom;
   background-repeat: no-repeat;
@@ -129,7 +129,7 @@ header #container-menu #call-to-action {
   background-color: #fffcfa;
 }
 #transform .yellow-egg {
-  background-image: url("../images/mobile/image-transform.jpg");
+  background-image: url("../images/mobile/image-transform.svg");
   background-position: 50%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -183,7 +183,7 @@ header #container-menu #call-to-action {
   background-color: #fffcfa;
 }
 #stand-out .pink-cup {
-  background-image: url("../images/mobile/image-stand-out.jpg");
+  background-image: url("../images/mobile/image-stand-out.svg");
   background-position: 50%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -213,6 +213,55 @@ header #container-menu #call-to-action {
 }
 #stand-out .learn-more:after {
   background-color: #fe7867;
+}
+#fruits {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+#fruits #cherry {
+  background-image: url("../images/mobile/image-graphic-design.svg");
+  background-size: cover;
+  background-position: right left;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+}
+#fruits #tangerine {
+  background-image: url("../images/mobile/image-photography.svg");
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+}
+#fruits .content {
+  margin: 65vh auto 0 auto;
+  width: 60%;
+  text-align: center;
+}
+#fruits .content .title-fruits {
+  font-family: 'Fraunces', serif;
+  font-weight: 900;
+  margin-bottom: 30px;
+}
+#fruits .content .title-fruits.cherry {
+  color: #25564b;
+}
+#fruits .content .title-fruits.tangerine {
+  color: #19536b;
+}
+#fruits .content .paragraph-fruits {
+  line-height: 1.2;
+  font-size: 1.125rem;
+  font-family: 'Barlow', sans-serif;
+  font-weight: 700;
+}
+#fruits .content .paragraph-fruits.cherry {
+  color: #25564b;
+}
+#fruits .content .paragraph-fruits.tangerine {
+  color: #19536b;
 }
 @media (min-width: 800px) {
   header #container-menu {
@@ -271,7 +320,7 @@ header #container-menu #call-to-action {
   }
   #we-are {
     height: 63vh;
-    background-image: url("../images/desktop/image-header.jpg");
+    background-image: url("../images/desktop/image-header.svg");
   }
   #we-are .title-we-are {
     letter-spacing: 10px;
@@ -303,7 +352,7 @@ header #container-menu #call-to-action {
     padding: 50px 0;
     order: 1;
     flex: 50%;
-    background-image: url("../images/desktop/image-transform.jpg");
+    background-image: url("../images/desktop/image-transform.svg");
     background-position: 40%;
   }
   #stand-out {
@@ -312,7 +361,7 @@ header #container-menu #call-to-action {
   #stand-out .pink-cup {
     padding: 50px 0;
     flex: 50%;
-    background-image: url("../images/desktop/image-stand-out.jpg");
+    background-image: url("../images/desktop/image-stand-out.svg");
     background-position: 40%;
   }
   #stand-out .content {
@@ -330,6 +379,27 @@ header #container-menu #call-to-action {
   #stand-out .content .learn-more:after {
     margin: 0;
     right: 5px;
+  }
+}
+@media (min-width: 800px) {
+  #fruits {
+    flex-direction: row;
+  }
+  #fruits #tangerine,
+  #fruits #cherry {
+    width: 50%;
+    flex: 50%;
+  }
+  #fruits #cherry {
+    background-image: url("../images/desktop/image-graphic-design.svg");
+    background-position: center;
+  }
+  #fruits #tangerine {
+    background-image: url("../images/desktop/image-photography.svg");
+    backgroun-position: center;
+  }
+  #fruits .content {
+    width: 50%;
   }
 }
 @-moz-keyframes hamburguerVisible {

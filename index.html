@@ -1,108 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="An landing for marketing" />
+    <meta
+      name="keywords"
+      content="Brand, creative, grow fast, marketing,Engage your clients,Frontend Mentor"
+    />
+    <meta
+      name="author"
+      content="João Victor Oliveira Pereira, github: @joaoquinto"
+    />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="An landing for marketing" />
-  <meta name="keywords" content="Brand, creative, grow fast, marketing,Engage your clients,Frontend Mentor" />
-  <meta name="author" content="João Victor Oliveira Pereira, github: @joaoquinto" />
+    <!-- Meta tags de compartilhamento -->
+    <!-- Metatag Facebook, Whatsapp e instagram -->
+    <meta
+      property="og:url"
+      content="https://joaoquinto.github.io/sunnyside-agency-landing-page/"
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Frontend Mentor | Sunnyside agency landing page"
+    />
+    <meta property="og:description" content="An landing for marketing" />
+    <meta
+      property="og:image"
+      content="https://raw.githubusercontent.com/joaoquinto/sunnyside-agency-landing-page/main/assets/images/mobile/image-gallery-orange.jpg"
+    />
 
-  <!-- Meta tags de compartilhamento -->
-  <!-- Metatag Facebook, Whatsapp e instagram -->
-  <meta property="og:url" content="https://joaoquinto.github.io/sunnyside-agency-landing-page/" />
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="Frontend Mentor | Sunnyside agency landing page" />
-  <meta property="og:description" content="An landing for marketing" />
-  <meta property="og:image" content="https://raw.githubusercontent.com/joaoquinto/sunnyside-agency-landing-page/main/assets/images/mobile/image-gallery-orange.jpg" />
+    <!-- Metatag Twitter -->
+    <meta
+      name="twitter:title"
+      content="Frontend Mentor | Sunnyside agency landing page"
+    />
+    <meta name="twitter:description" content="An landing for marketing" />
+    <meta
+      name="twitter:image"
+      content="https://raw.githubusercontent.com/joaoquinto/sunnyside-agency-landing-page/main/assets/images/mobile/image-gallery-orange.jpg"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
 
-  <!-- Metatag Twitter -->
-  <meta name="twitter:title" content="Frontend Mentor | Sunnyside agency landing page" />
-  <meta name="twitter:description" content="An landing for marketing" />
-  <meta name="twitter:image" content="https://raw.githubusercontent.com/joaoquinto/sunnyside-agency-landing-page/main/assets/images/mobile/image-gallery-orange.jpg" />
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
-  <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Frontend Mentor | Sunnyside agency landing page</title>
 
-  <title>Frontend Mentor | Sunnyside agency landing page</title>
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
 
-  <style>
-    .attribution {
-      font-size: 11px;
-      text-align: center;
-    }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-38JYG569C6"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-    .attribution a {
-      color: hsl(228, 45%, 44%);
-    }
-  </style>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-38JYG569C6"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag("js", new Date());
+      gtag("config", "G-38JYG569C6");
+    </script>
+  </head>
 
-    gtag("config", "G-38JYG569C6");
-  </script>
-</head>
-
-<body>
-  <header>
-    <nav id="container-menu">
-      <a class="logo-sunnyside" href="index.html">
-        <img src="./assets/images/logo.svg" alt="Logo Sunnyside" />
-      </a>
-      <button id="hamburguer" aria-hidden="">
-        <img src="./assets/images/icon-hamburger.svg" alt="" />
-      </button>
-      <ul id="container-links" class="" aria-orientation="" aria-expanded="">
-        <li><a class="item-links" href="#">About</a></li>
-        <li><a class="item-links" href="#">Services</a></li>
-        <li><a class="item-links" href="#">Projects</a></li>
-        <li><a id="call-to-action" href="#">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-  <section id="we-are">
-    <h1 class="title-we-are">We are creatives</h1>
-  </section>
-  <section id="transform">
-    <div class="yellow-egg"></div>
-    <div class="transform-content">
-      <div class="container-content">
-        <h2 class="title-transform">Transform your <br />brand</h2>
-        <p class="paragraph-content">
-          We are a full-service creative agency specializing in helping brands
-          grow fast. Engage your clients through compelling visuals that do
-          most of the marketing for you.
-        </p>
-        <a href="#" target="_blank" class="learn-more" rel="noopener noreferrer">Learn more
+  <body>
+    <header>
+      <nav id="container-menu">
+        <a class="logo-sunnyside" href="index.html">
+          <img src="./assets/images/logo.svg" alt="Logo Sunnyside" />
         </a>
+        <button id="hamburguer" aria-hidden="">
+          <img src="./assets/images/icon-hamburger.svg" alt="" />
+        </button>
+        <ul id="container-links" class="" aria-orientation="" aria-expanded="">
+          <li><a class="item-links" href="#">About</a></li>
+          <li><a class="item-links" href="#">Services</a></li>
+          <li><a class="item-links" href="#">Projects</a></li>
+          <li><a id="call-to-action" href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section id="we-are">
+      <h1 class="title-we-are">We are creatives</h1>
+    </section>
+    <section id="transform">
+      <div class="yellow-egg"></div>
+      <div class="transform-content">
+        <div class="container-content">
+          <h2 class="title-transform">Transform your <br />brand</h2>
+          <p class="paragraph-content">
+            We are a full-service creative agency specializing in helping brands
+            grow fast. Engage your clients through compelling visuals that do
+            most of the marketing for you.
+          </p>
+          <a
+            href="#"
+            target="_blank"
+            class="learn-more"
+            rel="noopener noreferrer"
+            >Learn more
+          </a>
+        </div>
       </div>
-    </div>
-  </section>
-  <section id="stand-out">
-    <div class="pink-cup"></div>
-    <div class="content">
-      <div class="container-content">
-        <h2 class="title-content">Stand out to the right <br>audience</h2>
-        <p class="paragraph-stand-out">
-          Using a collaborative formula of designers, researchers,
-          photographers, videographers, and copywriters, we’ll build and
-          extend your brand in digital places.
-        </p>
-        <a href="#" target="_blank" class="learn-more">Learn More</a>
+    </section>
+    <section id="stand-out">
+      <div class="pink-cup"></div>
+      <div class="content">
+        <div class="container-content">
+          <h2 class="title-content">Stand out to the right <br />audience</h2>
+          <p class="paragraph-stand-out">
+            Using a collaborative formula of designers, researchers,
+            photographers, videographers, and copywriters, we’ll build and
+            extend your brand in digital places.
+          </p>
+          <a href="#" target="_blank" class="learn-more">Learn More</a>
+        </div>
       </div>
+    </section>
+    <section id="fruits">
+      <div id="cherry">
+        <div class="content">
+          <h2 class="title-fruits cherry">Graphic design</h2>
+          <p class="paragraph-fruits cherry">
+            Great design makes you memorable. We deliver artwork that
+            underscores your brand message and captures potential clients’
+            attention.
+          </p>
+        </div>
+      </div>
+      <div id="tangerine">
+        <div class="content">
+          <h2 class="title-fruits tangerine">Photography</h2>
+          <p class="paragraph-fruits tangerine">
+            Increase your credibility by getting the most stunning, high-quality
+            photos that improve your business image.
+          </p>
+        </div>
+      </div>
+    </section>
+    <div class="attribution">
+      Challenge by
+      <a
+        href="https://www.frontendmentor.io?ref=challenge"
+        target="_blank"
+        rel="noopener noreferrer"
+        >Frontend Mentor</a
+      >. Coded by
+      <a
+        href="https://github.com/joaoquinto"
+        target="_blank"
+        rel="noopener noreferrer"
+        >João Victor Oliveira Pereira</a
+      >
     </div>
-  </section>
-  <div class="attribution">
-    Challenge by
-    <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noopener noreferrer">Frontend Mentor</a>. Coded by
-    <a href="https://github.com/joaoquinto" target="_blank" rel="noopener noreferrer">João Victor Oliveira Pereira</a>
-  </div>
-  <script type="module" src="./js/script.js"></script>
-</body>
-
+    <script type="module" src="./js/script.js"></script>
+  </body>
 </html>
