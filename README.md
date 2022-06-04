@@ -8,7 +8,7 @@
 
 ### Mobile Screenshot
 
-<img src="assets\screenshots\Mobilev3.png" width="414px">
+<img src="assets\screenshots\Mobilev4.png" width="414px">
 
 ### Mobile Screenshot Ativo
 
@@ -16,7 +16,7 @@
 
 ### Desktop Screenshot
 
-<img src="assets\screenshots\Desktopv3.png" width="1000px">
+<img src="assets\screenshots\Desktopv4.png" width="1000px">
 
 ## Stack utilizada
 
