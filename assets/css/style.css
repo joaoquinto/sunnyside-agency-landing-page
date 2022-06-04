@@ -92,7 +92,7 @@ header #container-menu #call-to-action {
 }
 #we-are {
   padding: 100px 0;
-  background-image: url("../images/mobile/image-header.jpg");
+  background-image: url("../images/mobile/image-header.svg");
   background-size: cover;
   background-position: center bottom;
   background-repeat: no-repeat;
@@ -129,7 +129,7 @@ header #container-menu #call-to-action {
   background-color: #fffcfa;
 }
 #transform .yellow-egg {
-  background-image: url("../images/mobile/image-transform.jpg");
+  background-image: url("../images/mobile/image-transform.svg");
   background-position: 50%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -183,7 +183,7 @@ header #container-menu #call-to-action {
   background-color: #fffcfa;
 }
 #stand-out .pink-cup {
-  background-image: url("../images/mobile/image-stand-out.jpg");
+  background-image: url("../images/mobile/image-stand-out.svg");
   background-position: 50%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -220,7 +220,7 @@ header #container-menu #call-to-action {
   flex-direction: column;
 }
 #fruits #cherry {
-  background-image: url("../images/mobile/image-graphic-design.jpg");
+  background-image: url("../images/mobile/image-graphic-design.svg");
   background-size: cover;
   background-position: right left;
   background-repeat: no-repeat;
@@ -228,7 +228,7 @@ header #container-menu #call-to-action {
   height: 100vh;
 }
 #fruits #tangerine {
-  background-image: url("../images/mobile/image-photography.jpg");
+  background-image: url("../images/mobile/image-photography.svg");
   background-size: cover;
   background-position: center top;
   background-repeat: no-repeat;
@@ -320,7 +320,7 @@ header #container-menu #call-to-action {
   }
   #we-are {
     height: 63vh;
-    background-image: url("../images/desktop/image-header.jpg");
+    background-image: url("../images/desktop/image-header.svg");
   }
   #we-are .title-we-are {
     letter-spacing: 10px;
@@ -352,7 +352,7 @@ header #container-menu #call-to-action {
     padding: 50px 0;
     order: 1;
     flex: 50%;
-    background-image: url("../images/desktop/image-transform.jpg");
+    background-image: url("../images/desktop/image-transform.svg");
     background-position: 40%;
   }
   #stand-out {
@@ -361,7 +361,7 @@ header #container-menu #call-to-action {
   #stand-out .pink-cup {
     padding: 50px 0;
     flex: 50%;
-    background-image: url("../images/desktop/image-stand-out.jpg");
+    background-image: url("../images/desktop/image-stand-out.svg");
     background-position: 40%;
   }
   #stand-out .content {
@@ -391,11 +391,11 @@ header #container-menu #call-to-action {
     flex: 50%;
   }
   #fruits #cherry {
-    background-image: url("../images/desktop/image-graphic-design.jpg");
+    background-image: url("../images/desktop/image-graphic-design.svg");
     background-position: center;
   }
   #fruits #tangerine {
-    background-image: url("../images/desktop/image-photography.jpg");
+    background-image: url("../images/desktop/image-photography.svg");
     backgroun-position: center;
   }
   #fruits .content {
