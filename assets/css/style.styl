@@ -275,6 +275,51 @@ header
               color $Dark-blue-photography-text 
 
 
+#client-testmonials
+  background-color $White-ice
+  padding: 70px 0
+  display: flex
+  flex-direction: column
+  text-align: center
+  & .title-testmonials
+      color:$Grayish-blue
+      font-family $fraunces
+      font-weight $fw900
+      text-transform uppercase
+      font-size: $fontS
+      margin-bottom: 50px
+  & .container-testmonials
+      margin: 0 auto
+      width 80%
+      display: flex
+      flex-direction: column
+      align-items: center
+      & .item-testmonial + .item-testmonial
+          margin-top: 50px
+      & .item-testmonial img
+          border-radius: 50%
+          width 70px
+          height: @width
+          margin: 0 auto
+      & .item-testmonial li:nth-child(2)
+            margin-top: 25px
+      & .item-testmonial li:nth-child(3)
+            margin-top: 25px
+      & .item-testmonial li:last-child
+            margin-top: 15px
+      & .item-testmonial p
+          color: $Very-dark-grayish-blue 
+          font-family $barlow
+          font-size $fontS
+      & .item-testmonial h3
+          color $Very-dark-desaturated-blue
+          font-family $fraunces
+          font-weight $fw700
+      & .item-testmonial strong
+          color: $Grayish-blue
+          font-family $barlow
+          font-size 0.938rem
+
 
 
 @media (min-width: 800px)
@@ -371,6 +416,23 @@ header
           & .learn-more:after
               margin 0
               right 5px
+  #client-testmonials .container-testmonials
+      flex-direction: row
+      & .item-testmonial
+          display: flex
+          flex-direction: column
+      & .item-testmonial + .item-testmonial
+          margin-top: 0
+      & .item-testmonial
+         flex: 1
+      & .item-testmonial p
+          line-height:1.5
+          width 80%
+          margin: 0 auto
+      & .item-testmonial li:nth-child(2)
+          margin-top: 50px
+      & .item-testmonial li:nth-child(3)
+            margin-top: 50px
 
 @media(min-width: 800px)
   #fruits
