@@ -263,6 +263,61 @@ header #container-menu #call-to-action {
 #fruits .content .paragraph-fruits.tangerine {
   color: #19536b;
 }
+#client-testmonials {
+  background-color: #fffcfa;
+  padding: 70px 0;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+#client-testmonials .title-testmonials {
+  color: #a7abae;
+  font-family: 'Fraunces', serif;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 1.125rem;
+  margin-bottom: 50px;
+}
+#client-testmonials .container-testmonials {
+  margin: 0 auto;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#client-testmonials .container-testmonials .item-testmonial + .item-testmonial {
+  margin-top: 50px;
+}
+#client-testmonials .container-testmonials .item-testmonial img {
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  margin: 0 auto;
+}
+#client-testmonials .container-testmonials .item-testmonial li:nth-child(2) {
+  margin-top: 25px;
+}
+#client-testmonials .container-testmonials .item-testmonial li:nth-child(3) {
+  margin-top: 25px;
+}
+#client-testmonials .container-testmonials .item-testmonial li:last-child {
+  margin-top: 15px;
+}
+#client-testmonials .container-testmonials .item-testmonial p {
+  color: #5a636c;
+  font-family: 'Barlow', sans-serif;
+  font-size: 1.125rem;
+}
+#client-testmonials .container-testmonials .item-testmonial h3 {
+  color: #23303e;
+  font-family: 'Fraunces', serif;
+  font-weight: 700;
+}
+#client-testmonials .container-testmonials .item-testmonial strong {
+  color: #a7abae;
+  font-family: 'Barlow', sans-serif;
+  font-size: 0.938rem;
+}
 @media (min-width: 800px) {
   header #container-menu {
     flex-direction: row;
@@ -379,6 +434,30 @@ header #container-menu #call-to-action {
   #stand-out .content .learn-more:after {
     margin: 0;
     right: 5px;
+  }
+  #client-testmonials .container-testmonials {
+    flex-direction: row;
+  }
+  #client-testmonials .container-testmonials .item-testmonial {
+    display: flex;
+    flex-direction: column;
+  }
+  #client-testmonials .container-testmonials .item-testmonial + .item-testmonial {
+    margin-top: 0;
+  }
+  #client-testmonials .container-testmonials .item-testmonial {
+    flex: 1;
+  }
+  #client-testmonials .container-testmonials .item-testmonial p {
+    line-height: 1.5;
+    width: 80%;
+    margin: 0 auto;
+  }
+  #client-testmonials .container-testmonials .item-testmonial li:nth-child(2) {
+    margin-top: 50px;
+  }
+  #client-testmonials .container-testmonials .item-testmonial li:nth-child(3) {
+    margin-top: 50px;
   }
 }
 @media (min-width: 800px) {

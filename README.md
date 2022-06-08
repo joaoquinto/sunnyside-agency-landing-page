@@ -8,7 +8,7 @@
 
 ### Mobile Screenshot
 
-<img src="assets\screenshots\Mobilev4.png" width="414px">
+<img src="assets\screenshots\Mobilev5.png" width="414px">
 
 ### Mobile Screenshot Ativo
 
@@ -16,12 +16,12 @@
 
 ### Desktop Screenshot
 
-<img src="assets\screenshots\Desktopv4.png" width="1000px">
+<img src="assets\screenshots\Desktopv5.png" width="1000px">
 
 ## Stack utilizada
 
 Front-end: HTML5, CSS3, stylus, JavaScript
 
-Ferramentas: Google Fonts, , Vscode, Git, Github, Google Lighthouse
+Ferramentas: Google Fonts, Vscode, Git, Github, Google Lighthouse
 
 Monitoramento: Google Analytics
