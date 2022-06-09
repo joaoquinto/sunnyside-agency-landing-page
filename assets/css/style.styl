@@ -238,41 +238,40 @@ header
   display flex
   width 100%
   flex-direction column
-  & #cherry
-      background-image url("../images/mobile/image-graphic-design.svg")
-      background-size cover
-      background-position right left
-      background-repeat no-repeat
-      width 100%
-      height 100vh
-  & #tangerine
-      background-image url("../images/mobile/image-photography.svg")
-      background-size cover
-      background-position center top
-      background-repeat no-repeat
-      width 100%
-      height 100vh
+  text-align: center
+  position: relative
   & .content
-      margin 65vh auto 0 auto
-      width 60%
-      text-align center
-      & .title-fruits
-          font-family $fraunces
-          font-weight $fw900
-          margin-bottom 30px
-          &.cherry
-            color $Dark-desaturated-cyan-graphic-design-text 
-          &.tangerine
-            color $Dark-blue-photography-text 
-      & .paragraph-fruits
-          line-height 1.2
-          font-size $fontS
-          font-family $barlow
-          font-weight $fw700
-          &.cherry
-              color $Dark-desaturated-cyan-graphic-design-text
-          &.tangerine
-              color $Dark-blue-photography-text 
+      width 80%
+      margin: 0 auto
+      position: relative
+      top: 60%
+  & .title-fruits
+      font-family $fraunces
+      font-weight $fw900
+      margin-bottom 30px
+  & .cherry
+      color $Dark-desaturated-cyan-graphic-design-text 
+  & .tangerine
+      color $Dark-blue-photography-text 
+  & .paragraph-fruits
+        line-height 1.2
+        font-size $fontS
+        font-family $barlow
+        font-weight $fw700
+  & #cherry
+      height: 100vh
+      background-image url("../images/mobile/image-graphic-design.svg")
+      background-repeat: no-repeat
+      background-size: cover
+      background-position: center center
+  & #tangerine
+    height: 100vh
+    background-image url("../images/mobile/image-photography.svg")
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center center
+
+
 
 
 #client-testmonials
@@ -433,18 +432,20 @@ header
           margin-top: 50px
       & .item-testmonial li:nth-child(3)
             margin-top: 50px
-
-@media(min-width: 800px)
   #fruits
     flex-direction row
-    & #tangerine, #cherry
-        width 50%
-        flex 50%
+    & #cherry, #tangerine
+        flex: 1
+        background-position: center top
     & #cherry
-      background-image url("../images/desktop/image-graphic-design.svg")
-      background-position center
+        background-image url("../images/desktop/image-graphic-design.svg")
     & #tangerine
-      background-image url("../images/desktop/image-photography.svg")
-      backgroun-position center
-    & .content
-        width 50%
+        background-image url("../images/desktop/image-photography.svg")
+
+
+@media (min-width 1400px)
+  #fruits .content
+    width 80%
+  #fruits
+    & #cherry, #tangerine
+        background-size: cover
