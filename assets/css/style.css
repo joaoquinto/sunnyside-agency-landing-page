@@ -13,6 +13,9 @@ ul li {
 a {
   text-decoration: none;
 }
+body {
+  background-color: #fffcfa;
+}
 header {
   display: flex;
   flex-direction: column;
@@ -316,10 +319,48 @@ header #container-menu #call-to-action {
 .container-products {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 20vh;
 }
 .container-products .products-item {
   flex: 50%;
+}
+footer {
+  background-color: #91d4c6;
+  padding: 100px 0;
+}
+footer .navigation {
+  margin: 0 auto;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+footer .navigation .Logo-footer {
+  width: 130px;
+  height: 28px;
+}
+footer .navigation .container-links {
+  display: flex;
+  margin-top: 30px;
+  margin-bottom: 60px;
+}
+footer .navigation .item-links + .item-links {
+  margin-left: 40px;
+}
+footer .navigation a,
+footer .navigation p {
+  color: #458c7e;
+  font-family: 'Barlow', sans-serif;
+  font-weight: 600;
+}
+footer .navigation .container-social-icons {
+  display: flex;
+}
+footer .navigation .container-social-icons li + li {
+  margin-left: 30px;
+}
+footer .navigation p {
+  margin-top: 30px;
 }
 @media (min-width: 800px) {
   header #container-menu {
@@ -478,6 +519,10 @@ header #container-menu #call-to-action {
   }
   #products .products-item {
     flex: 25%;
+  }
+  footer {
+    background-color: #91d4c6;
+    padding: 60px 0;
   }
 }
 @media (min-width: 1400px) {

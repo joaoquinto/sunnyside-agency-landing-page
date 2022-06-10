@@ -18,6 +18,7 @@ $Dark-grayish-blue = hsl(232, 10%, 55%)
 $Grayish-blue = hsl(210, 4%, 67%)
 $White = hsl(0, 0%, 100%)
 $White-ice = hsl(26, 100%, 99%)
+$footer-background = hsl(167, 44%, 70%)
 
 *
   margin: 0
@@ -35,7 +36,8 @@ ul
 a
   text-decoration: none
 
-
+body
+  background-color $White-ice
 
 
 
@@ -322,9 +324,40 @@ header
 .container-products
   display: flex
   flex-wrap: wrap
-  margin-top: 20vh
   & .products-item
       flex 50%
+
+footer
+  background-color $footer-background
+  padding 100px 0
+  & .navigation
+      margin 0 auto
+      width 80%
+      display flex
+      flex-direction column
+      align-items center
+      justify-content center
+      & .Logo-footer
+          width 130px
+          height 28px
+      & .container-links
+          display flex
+          margin-top 30px
+          margin-bottom 60px
+        & .item-links + .item-links
+            margin-left 40px
+        & a,p
+            color $Dark-moderate-cyan-footer
+            font-family $barlow
+            font-weight $fw600
+      & .container-social-icons
+          display flex
+          & li + li
+              margin-left 30px
+      & p
+          margin-top 30px
+          
+
 
 @media (min-width: 800px)
   header
@@ -449,7 +482,9 @@ header
  
    #products .products-item
     flex 25%
-
+  footer
+    background-color $footer-background
+    padding 60px 0
 
 @media (min-width 1400px)
   #fruits .content
