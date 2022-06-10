@@ -313,6 +313,14 @@ header #container-menu #call-to-action {
   font-family: 'Barlow', sans-serif;
   font-size: 0.938rem;
 }
+.container-products {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20vh;
+}
+.container-products .products-item {
+  flex: 50%;
+}
 @media (min-width: 800px) {
   header #container-menu {
     flex-direction: row;
@@ -467,6 +475,9 @@ header #container-menu #call-to-action {
   }
   #fruits #tangerine {
     background-image: url("../images/desktop/image-photography.svg");
+  }
+  #products .products-item {
+    flex: 25%;
   }
 }
 @media (min-width: 1400px) {
